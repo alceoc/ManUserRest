@@ -29,3 +29,9 @@ Insert JSON code with keys "userId" "firstName" "lastName" "mail"
 #### Test 2: add new user and validation email
 Insert invalid address mail, an error description appears   
 ![Test2](https://github.com/alceoc/ManUserRest/blob/master/images/Image2.png)
+
+### Test 3: get user list  
+GET method with HTTP header return the list of the user added with POST method
+The same result is obtained with the browser at the url http://localhost:8080/user/  
+![Test3](https://github.com/alceoc/ManUserRest/blob/master/images/Image3.png)
+
