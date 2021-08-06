@@ -11,5 +11,6 @@ The Dockerfile creats a docker image
 
 The Rest application can testing with the tool HTTP request [Advanced Rest Client](https://install.advancedrestclient.com/install).  
 
-##Testing 
-Starts Advanced Rest Client (or any client tool testing):   
+## Testing 
+Starts Advanced Rest Client (or any client tool testing):  
+![Start](images/image1.png)
