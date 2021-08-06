@@ -26,12 +26,34 @@ Insert JSON code with keys "userId" "firstName" "lastName" "mail"
 ```
 ![Start](https://github.com/alceoc/ManUserRest/blob/master/images/Image1.png)
 
-#### Test 2: add new user and validation email
-Insert invalid address mail, an error description appears   
-![Test2](https://github.com/alceoc/ManUserRest/blob/master/images/Image2.png)
+#### Test 2: Adding an existing userAdd (same Id);  
+Insert an user with same Id: alert appears;   
 
-### Test 3: get user list  
+![User_exists](https://github.com/alceoc/ManUserRest/blob/master/images/Image1_1.png)
+
+#### Test 3: add new user and validation email
+Insert invalid address mail, an error description appears   
+![Test3](https://github.com/alceoc/ManUserRest/blob/master/images/Image2.png)
+
+#### Test 4: get user list  
 GET method with HTTP header return the list of the user added with POST method
 The same result is obtained with the browser at the url http://localhost:8080/user/  
-![Test3](https://github.com/alceoc/ManUserRest/blob/master/images/Image3.png)
+![Test4](https://github.com/alceoc/ManUserRest/blob/master/images/Image3.png)
+
+#### Test 5: delete a user 
+DELETE method removes the user with id: Enclose the address with the user id to delete:
+```bash
+http://localhost:8080/user/3
+```  
+User with id=3 is removed  
+![Test5](https://github.com/alceoc/ManUserRest/blob/master/images/Image4.png)
+
+#### Test 6: trying to delete a user with an id no listed 
+When trying to delete a user id no that has not been added a message appa:
+```bash
+http://localhost:8080/user/3
+```  
+User with id=3 is removed  
+![Test5](https://github.com/alceoc/ManUserRest/blob/master/images/Image4.png)
+
 
